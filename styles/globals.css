@@ -24,19 +24,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-EOF
-
-# Create next.config.js
-cat > next.config.js << 'EOF'
-/** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
-}
-
-module.exports = nextConfig
-EOF
-
-# Commit and push
-git add .
-git commit -m "Fix: Add missing styles and config files"
-git push
